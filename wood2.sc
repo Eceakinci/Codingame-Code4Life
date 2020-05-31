@@ -116,8 +116,6 @@ object Player extends App {
                     neededMol = a(i)
                    }   
              }
-		//if needed molecule is not null(which means robot take sample from cloud)
-		//i have sample id already 
             if(neededMol != null){ goAndConnect("MOLECULES",neededMol,me.target)}
             else { goAndConnect("LABORATORY",bestSample.id,me.target) }  
              
